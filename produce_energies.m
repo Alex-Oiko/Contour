@@ -1,10 +1,10 @@
 function produce_energies(intensity)
 	energies=zeros(rows(intensity),columns(intensity));
 	double(sums=zeros(3,4));
-	distance_vector=0;
+	distance_=0;
 	position=zeros(rows(intensity),columns(intensity));
 	E=0;
-	lambda=0.01;
+	lambda=0.5;
 	temp_sum=0;
 	minimum=0;
 	minimumE=0;
@@ -18,8 +18,8 @@ function produce_energies(intensity)
 	for j=1:1:rows(intensity)
 		for k=2:1:columns(intensity)
 			for t=1:1:rows(intensity)
-				distance_vector=sqrt((intensity(j,k,1)-intensity(t,k-1,1))^2+(intensity(j,k,2)-intensity(t,k-1,2))^2);%find distance between the middles of each point
-				E=lambda*distance_vector+(1-lambda)*intensity(j,k,3);
+				distance_=sqrt((intensity(j,k,1)-intensity(t,k-1,1))^2+(intensity(j,k,2)-intensity(t,k-1,2))^2);%find distance between the middles of each point
+				E=lambda*distance_+(1-lambda)*intensity(j,k,3);
 				energies_to_min(t)=E;%to minimize energy
 				temp_sum=sums(t,k-1)+E;
 				sums_to_min(t)=temp_sum;%to minimize the sums
