@@ -13,9 +13,14 @@ axis square
 bot=load('init1.ctr');
 top=load('init2.ctr');
 
-points = search_space(bot,top);
-hold on
-plot(points(:,:,1),points(:,:,2),'r@')
-plot(bot(:,1),bot(:,2),'g+-')
-plot(top(:,1),top(:,2),'g+-')
+points = search_space(im,bot,top);
 
+[position,energies] = produce_energies(points);
+%energies
+%position
+contour = get_contour(position,energies);
+hold on
+%plot(points(:,:,1),points(:,:,2),'r+')
+plot(contour(:,1),contour(:,2),'r+');
+plot(bot(:,1),bot(:,2),'g+-');
+plot(top(:,1),top(:,2),'g+-');

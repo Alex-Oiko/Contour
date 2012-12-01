@@ -1,5 +1,4 @@
 function[intensity]=get_intensities(matrix)
-	counter=1;
 	intensity =zeros(3,4,3);
 	xcounter=1;
 	ycounter=1;
@@ -9,8 +8,8 @@ function[intensity]=get_intensities(matrix)
 			intensity(xcounter,ycounter,2)=x;
 			intensity(xcounter,ycounter,3)=matrix(x,y);
 			xcounter=xcounter+1;
-		endfor
+        end
 		ycounter=ycounter+1;
 		xcounter=1;
-	endfor
-endfunction
+    end
+end
