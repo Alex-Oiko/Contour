@@ -5,14 +5,15 @@ function[position,energies] = produce_energies(intensity)
 	distance_=0;
 	position=zeros(sz(1),sz(2),3);
 	E=0;
-	lambda=0.5;
+	lambda=0.1;
 	temp_sum=0;
 	minimumS=0;
 	minimumE=0;
 	pos=0;
+	indexes=zeros();
 	sums_to_min=zeros();
 	for i=1:1:sz(1);
-        		energies(i,1)=0;
+        		energies(i,1)=intensity(i,1,3);
         		position(i,1,1)=intensity(i,1,1);
         		position(i,1,2)=intensity(i,1,2);
        		position(i,1,3)=0;
@@ -25,21 +26,18 @@ function[position,energies] = produce_energies(intensity)
         		E=lambda*distance_+(1-lambda)*intensity(k,j,3);
         		temp_sum=energies(f,j-1)+E;
         		
-        		sums_to_min(f)=temp_sum;			
+        		sums_to_min(f)=temp_sum;
+        		indexes(f)=f;
         		end
         		
         		position(k,j,1)=intensity(k,j,1);
         		position(k,j,2)=intensity(k,j,2);
         		
-        		minimumS=min(sums_to_min);
+        		[minimumS minimumI]=min(sums_to_min);
             		energies(k,j)=minimumS;
-            		
-        		pos = find(sums_to_min==minimumS);
-        		position(k,j,3)=pos(1);
-        		
-            		sums_to_min
-        		pos
-        		
+            		position(k,j,3)=minimumI;
+            		      		
         		sums_to_min=zeros();
+        		indexes=zeros();
     	end
 end
