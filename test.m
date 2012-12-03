@@ -15,6 +15,13 @@ top=load('init2.ctr');
 
 points = search_space(im,bot,top);
 
+sz=size(points);
+for i=1:1:sz(1)
+	for j=1:1:sz(2)
+		points(i,j,3)=1-points(i,j,3);
+	end
+end
+
 [position,energies] = produce_energies(points);
 %energies
 %position
