@@ -1,5 +1,5 @@
 function[points]= search_space(image,bot,top)
-	M=50;
+	M=80;
     sz = size(bot);
 	points=zeros(sz(1),sz(2),3);
 	for i=1:sz(1)

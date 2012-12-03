@@ -5,12 +5,6 @@ imagesc ( im )
 colormap ( gray )
 axis square
 
-im = double ( im );
-imax = max ( max ( im ));
-imin = min ( min ( im ));
-im = ( im - imin )/( imax - imin );
-
-
 intensity=get_intensities(im);
 
 %hold on

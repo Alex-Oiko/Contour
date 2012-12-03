@@ -5,7 +5,7 @@ function[position,energies] = produce_energies(intensity)
 	distance_=0;
 	position=zeros(sz(1),sz(2),3);
 	E=0;
-	lambda=0.1;
+	lambda=0.05;
 	temp_sum=0;
 	minimumS=0;
 	minimumE=0;
@@ -13,7 +13,7 @@ function[position,energies] = produce_energies(intensity)
 	indexes=zeros();
 	sums_to_min=zeros();
 	for i=1:1:sz(1);
-        		energies(i,1)=intensity(i,1,3);
+        		energies(i,1)=0;
         		position(i,1,1)=intensity(i,1,1);
         		position(i,1,2)=intensity(i,1,2);
        		position(i,1,3)=0;
@@ -34,8 +34,10 @@ function[position,energies] = produce_energies(intensity)
         		position(k,j,2)=intensity(k,j,2);
         		
         		[minimumS minimumI]=min(sums_to_min);
-            		energies(k,j)=minimumS;
-            		position(k,j,3)=minimumI;
+            	energies(k,j)=minimumS;
+            	position(k,j,3)=minimumI;
+                %sums_to_min
+                %minimumI
             		      		
         		sums_to_min=zeros();
         		indexes=zeros();
