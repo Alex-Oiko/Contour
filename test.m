@@ -25,7 +25,7 @@ end
 [position,energies] = produce_energies(points);
 %energies
 %position
-contour = get_contour(position,energies);
+contour = get_contour(position,energies,points);
 hold on
 %plot(points(:,:,1),points(:,:,2),'r+')
 plot(contour(:,1),contour(:,2),'r+');
