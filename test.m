@@ -15,6 +15,7 @@ top=load('init2.ctr');
 
 points = search_space(im,bot,top);
 
+
 sz=size(points);
 for i=1:1:sz(1)
 	for j=1:1:sz(2)
@@ -22,9 +23,13 @@ for i=1:1:sz(1)
 	end
 end
 
+
 [position,energies] = produce_energies(points);
 %energies
 %position
+%size(energies)
+%size(position)
+%ize(points)
 contour = get_contour(position,energies,points);
 hold on
 %plot(points(:,:,1),points(:,:,2),'r+')

@@ -13,5 +13,5 @@ intensity=get_intensities(im);
 contour = get_contour(position,energies,intensity)
 
 hold on
-plot (position(:,: ,1) ,position(:,:,2) , 'r+');
+%plot (position(:,: ,1) ,position(:,:,2) , 'r+');
 plot(contour(:,1),contour(:,2),'r+-');

@@ -6,7 +6,7 @@ function[position,energies] = produce_energies(intensity)
 	E=0;
 	nume=0;
 	denom=0;
-	lambda=0.00001;
+	lambda=0.5;
 	temp_sum=0;
 	minimumS=0;
     	
@@ -31,15 +31,14 @@ function[position,energies] = produce_energies(intensity)
                     afterposy=intensity(f,j+1,2);
                 end
                 
-        			for t=1:1:sz(1)%loop for the column before the curret
-                            preposx=intensity(t,j-1,1);
-                            preposy=intensity(t,j-1,2);
+        			for t=1:1:sz(1)%loop for the column before the current
         
-                            nume=(afterposx-2*curposx+preposx)^2+(afterposy-2*curposy+preposy)^2;
-                            denom=(afterposx+preposx)^2+(afterposy+preposy)^2;
+                            nume=(afterposx-2*curposx+intensity(t,j-1,1))^2+(afterposy-2*curposy+intensity(t,j-1,2))^2;
+                            denom=(afterposx+intensity(t,j-1,1))^2+(afterposy+intensity(t,j-1,2))^2;
+                            
                             ft=nume/denom;
         					E=lambda*ft+(1-lambda)*intensity(k,j,3);
-        					temp_sum=energies(k,j-1,f)+E;
+        					temp_sum=energies(t,j-1,k)+E;
         					sums_to_min(t)=temp_sum;
         		end
         		[minimumS minimumI]=min(sums_to_min);
