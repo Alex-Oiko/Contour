@@ -1,12 +1,14 @@
-function[position,energies] = produce_energies(intensity)
+function[position,energies,intensity] = produce_energies(im,bot,top,l)
+    intensity = search_space(im,bot,top);
+
     sz=size(intensity);
 	energies=double(zeros(sz(1),sz(2),sz(1)));	
 	position=zeros(sz(1),sz(2),sz(1));
-
+  
 	E=0;
 	nume=0;
 	denom=0;
-	lambda=0.5;
+	lambda=l;
 	temp_sum=0;
 	minimumS=0;
     	

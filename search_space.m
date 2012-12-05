@@ -12,6 +12,7 @@ function[points]= search_space(image,bot,top)
 			points(j,i,2)=tempy;
             points(j,i,3)=image(ceil(tempy),ceil(tempx));
         end
-    end
+    end 
+    points=negate_intensities(points);   
 end
 	

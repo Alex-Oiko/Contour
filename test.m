@@ -12,27 +12,28 @@ axis square
 
 bot=load('init1.ctr');
 top=load('init2.ctr');
+%bot1=bot;
+%top1=top;
+%sb=size(bot);
+%st=size(top);
+%for i=1:sb(1)
+%        bot1(i,1)=bot(i,1)+20;
+%        bot1(i,2)=bot(i,2)+20;
+%        top1(i,1)=top(i,1)-20;
+%        top1(i,2)=top(i,2)-20;
+%end
 
-points = search_space(im,bot,top);
+l=0.9;
+top1
+bot1
+[position,energies,points] = produce_energies(im,bot1,top1,l);
 
-
-sz=size(points);
-for i=1:1:sz(1)
-	for j=1:1:sz(2)
-		points(i,j,3)=1-points(i,j,3);
-	end
-end
-
-
-[position,energies] = produce_energies(points);
-%energies
-%position
-%size(energies)
-%size(position)
-%ize(points)
 contour = get_contour(position,energies,points);
 hold on
 %plot(points(:,:,1),points(:,:,2),'r+')
 plot(contour(:,1),contour(:,2),'r+');
+%plot(bot(:,1),bot(:,2),'g+-');
+%plot(top(:,1),top(:,2),'g+-');
+
 plot(bot(:,1),bot(:,2),'g+-');
 plot(top(:,1),top(:,2),'g+-');

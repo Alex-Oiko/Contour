@@ -1,0 +1,29 @@
+im = imread ('tongue.png');
+
+im = double ( im );
+imax = max ( max ( im ));
+imin = min ( min ( im ));
+im = ( im - imin )/( imax - imin );
+
+figure (1)
+imagesc (im)
+colormap ( gray )
+axis square
+
+bot=load('init1.ctr');
+sb=size(bot);
+st=size(top);
+for i=1:sb(1)
+    
+end
+top=load('init2.ctr');
+l=0.001;
+
+%[position,energies] = produce_energies(im,bot,top,l);
+
+contour = get_contour(position,energies,points);
+hold on
+%plot(points(:,:,1),points(:,:,2),'r+')
+%plot(contour(:,1),contour(:,2),'r+');
+plot(bot(:,1),bot(:,2),'g+-');
+plot(top(:,1),top(:,2),'g+-');

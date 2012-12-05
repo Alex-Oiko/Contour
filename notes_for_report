@@ -1,0 +1,17 @@
+Different lambdas
+====================
+with M=100
+lambda	   |	contour_drawn_correctly
+=========================================
+0.0001			Breaks for some points
+0.001			Breaks for some points
+0.01			Breaks for some points
+0.1			Cool
+0.2			Cool
+0.3			Cool
+0.4			Cool
+0.5			Cool
+0.6			Cool
+0.7			Cool
+0.8			Even better
+0.9			Even better
