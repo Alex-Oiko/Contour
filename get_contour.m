@@ -17,14 +17,13 @@ goto=position(rowI(1),sz(2)-2,TDI);
 
 
 counter=2;
-columns = sz(2)-2;
 
 for i=2:1:sz(2)-1
-    contour(i,1)=intensity(goto(1),i,1);
-    contour(i,2)=intensity(goto(1),i,2);
+    contour(i,1)=intensity(goto,sz(2)-i,1);
+    contour(i,2)=intensity(goto,sz(2)-i,2);
     
     tmpgt=goto;
-    goto = position(goto(1),i,rowI);
+    goto = position(goto,sz(2)-i,rowI);
     rowI=tmpgt;
 end
 end
