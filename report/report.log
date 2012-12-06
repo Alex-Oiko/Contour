@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.2)  6 DEC 2012 02:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.2)  6 DEC 2012 02:54
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -243,20 +243,26 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Underfull \hbox (badness 3343) in paragraph at lines 28--29
+] <energy_eq.jpg, id=7, 563.10374pt x 69.25874pt>
+File: energy_eq.jpg Graphic file (type jpg)
+
+<use energy_eq.jpg>
+Underfull \hbox (badness 3343) in paragraph at lines 28--33
 \OT1/cmr/m/n/12 get[]energies which takes as ar-gu-ments
  []
 
 
-Overfull \hbox (46.04861pt too wide) in paragraph at lines 28--29
-\OT1/cmr/m/n/12 (rows(intensity),columns(intensity),rows(intensity)). 
+Overfull \hbox (46.04861pt too wide) in paragraph at lines 28--33
+\OT1/cmr/m/n/12 (rows(intensity),columns(intensity),rows(intensity)).
  []
 
-<energy_eq.jpg, id=7, 563.10374pt x 69.25874pt>
-File: energy_eq.jpg Graphic file (type jpg)
- <use energy_eq.jpg>
-Overfull \hbox (29.0004pt too wide) in paragraph at lines 30--34
+
+Underfull \hbox (badness 2197) in paragraph at lines 28--33
+\OT1/cmr/m/n/12 de-pend-ing on the point the al-go-rithm
+ []
+
+
+Overfull \hbox (29.0004pt too wide) in paragraph at lines 28--33
 []
  []
 
@@ -267,7 +273,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 4608) has occurred while \output is active []
 
  [3]
-Underfull \hbox (badness 1231) in paragraph at lines 49--51
+Underfull \hbox (badness 1231) in paragraph at lines 48--50
 \OT1/cmr/m/n/12 dif-fer-ent ini-tial-i-sa-tions of con-tours were
  []
 
@@ -275,7 +281,7 @@ Underfull \hbox (badness 1231) in paragraph at lines 49--51
 File: points_1_to_7.jpg Graphic file (type jpg)
 
 <use points_1_to_7.jpg>
-Overfull \hbox (279.00081pt too wide) in paragraph at lines 61--64
+Overfull \hbox (279.00081pt too wide) in paragraph at lines 60--63
 [] 
  []
 
@@ -283,12 +289,12 @@ Overfull \hbox (279.00081pt too wide) in paragraph at lines 61--64
 File: 89.jpg Graphic file (type jpg)
 
 <use 89.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 \OT1/cmr/m/n/12 0.8$\OML/cmm/m/it/12 <$ $^^U$ $<$\OT1/cmr/m/n/12 0.9 and M=100
  []
 
 
-Overfull \hbox (279.00081pt too wide) in paragraph at lines 70--72
+Overfull \hbox (279.00081pt too wide) in paragraph at lines 69--71
 [] 
  []
 
@@ -296,12 +302,12 @@ Overfull \hbox (279.00081pt too wide) in paragraph at lines 70--72
 File: small_values.jpg Graphic file (type jpg)
 
 <use small_values.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 $\OML/cmm/m/it/12 ^^U$\OT1/cmr/m/n/12 =0.00001 and M=100
  []
 
 
-Overfull \hbox (279.00081pt too wide) in paragraph at lines 76--78
+Overfull \hbox (279.00081pt too wide) in paragraph at lines 75--77
 [] 
  []
 
@@ -309,18 +315,18 @@ Overfull \hbox (279.00081pt too wide) in paragraph at lines 76--78
 File: top_plus_many.jpg Graphic file (type jpg)
 
 <use top_plus_many.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 \OT1/cmr/m/n/12 The y of the top con-tour is de-
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 83--86
+Underfull \hbox (badness 4266) in paragraph at lines 82--85
 \OT1/cmr/m/n/12 creased by 50. $\OML/cmm/m/it/12 ^^U$\OT1/cmr/m/n/12 =0.8 and M
 =100
  []
 
 
-Overfull \hbox (279.00081pt too wide) in paragraph at lines 83--86
+Overfull \hbox (279.00081pt too wide) in paragraph at lines 82--85
 [] 
  []
 
@@ -328,18 +334,18 @@ Overfull \hbox (279.00081pt too wide) in paragraph at lines 83--86
 File: bot_plus_50.jpg Graphic file (type jpg)
 
 <use bot_plus_50.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
 \OT1/cmr/m/n/12 The y of the top con-tour is de-
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 91--94
+Underfull \hbox (badness 4266) in paragraph at lines 90--93
 \OT1/cmr/m/n/12 creased by 50. $\OML/cmm/m/it/12 ^^U$\OT1/cmr/m/n/12 =0.8 and M
 =100
  []
 
 
-Overfull \hbox (279.00081pt too wide) in paragraph at lines 91--94
+Overfull \hbox (279.00081pt too wide) in paragraph at lines 90--93
 [] 
  []
 
@@ -358,7 +364,7 @@ Here is how much of TeX's memory you used:
 lic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
 s/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.
 pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on report.pdf (9 pages, 182131 bytes).
+Output written on report.pdf (9 pages, 182127 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
