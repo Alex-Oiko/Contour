@@ -17,3 +17,27 @@ lambda	   |	contour_drawn_correctly
 0.9			Even better
 
 Mention when and why the contour brakes when you change the initial contours
+
+Different M's
+==============
+with constant lambda=0.8
+M       time
+============
+30    
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+200
