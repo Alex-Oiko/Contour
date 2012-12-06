@@ -35,7 +35,7 @@ axis square
 bot=load('init1.ctr');
 top=load('init2.ctr');
 
-l=0.2;
+l=0.8;
 %uncomment this section to tweak the initial contours
 %bot1=bot;	
 %top1=top;
